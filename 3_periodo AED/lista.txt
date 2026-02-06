@@ -1,0 +1,32 @@
+PONTEIRO CHAMADO LISTA
+
+
+INSERIR INICIO
+
+o novo->prox aponta pro head antigo, o de antes de rodar a função, ai a função retorna o nó inteiro "novo", que está sendo apontado pela lista, head e lista são só jeitos de chamar, quando colocar os parametros da funçao, vai colocar por exemplo lista = inserir_inicio(lista, 10);  o parametro head seria a lista inserida agora, ou seja ver texto em baixo
+
+
+FUNÇÃO NA MAIN
+
+a função  que faz os bagulho tudo retorna o nó inteiro com dado e ponteiro, e então o ponteiro chamado lista na main, sendo igualado à função que foi chamada agora, aponta para o nó que foi retornado, ou seja, a lista está apontando para o primeiro nó retornado, que vai ter os dados, e ter um ponteiro guardando o endereço de memória do próximo.
+
+
+IMPRIMIR LISTA
+
+pra imprimir, é usado um ponteiro chamado atual por exemplo, ai ele aponta pro head, que é o início da lista, e usando um while, enquanto o head/lista for diferente de null, ele vai printar o dado do nó, e o ponteiro chamado atual vai apontar para o atual->prox, ou seja o head->prox pela primeira vez, depois ele só vai ficar pegando o nó atual que está sendo apontado e repetir até chegar em null 
+
+
+No* lista = NULL; //criação da lista, aponta pra null
+    lista = inserir_inicio(lista, 10); // lista agora aponta para o nó retornado pela função, com valor 10 e com ponteiro prox apontando para o antigo "head" que era a lista de antes apontando para o null. 
+
+
+lista -> null
+//rodou função
+
+lista -> no[10 | ponteiro pro head/lista antigo] -> Null
+
+se rodar de novo a função inserindo 20
+
+lista -> no[20 | ponteiro pro head/lista antigo] -> no[10 | ponteiro pro head/lista antigo] -> Null
+
+
